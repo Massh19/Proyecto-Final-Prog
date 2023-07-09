@@ -377,16 +377,18 @@ div input{ /*letra de los formularios diff*/
 
 /*estilos de SOBRE NOSOTROS*/
 .back-home{ /*para regressar al home*/
-    height: 2px;
-    width: fit-content;
+    position: relative;
+    top: 20px;
+    margin: 1%;
+    background: #38639b;
+    padding: 10px;
     text-transform: uppercase;
-    margin: 2% 1%;
-}
-.back-home a{
-    color: #202d3a;
+    border-radius: 2px;
+    color: #fff; 
 }
 .back-home:hover{ 
-    text-decoration: underline;
+    background: #014AAC;
+
 }
 .contenedor-personajes{ /*contiene la leyenda de la pagina y a los personajes*/
     width: 100%;
