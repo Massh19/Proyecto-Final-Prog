@@ -1,0 +1,519 @@
+@font-face { /*Importacion de fuente*/
+    font-family: Monserratadd;
+    src: url(Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face { /*Importacion de fuente*/
+    font-family: Robotoadd;
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face { /*Importacion de fuente*/
+    font-family: Nunitoadd;
+    src: url(Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunitoadd;
+}
+h1,h2,h3,h4{ /*titulos con letra diff*/
+    font-family: Robotoadd;
+}
+header{
+    display: inline-flex;
+    background-color: #00319D;
+    justify-content: space-between;
+    width: 100%;
+}
+/*encabezado*/
+.banner{ /*donde esta el logo*/
+    height: 100%;
+    width: 70%;
+}
+
+.banner img{/*Logo en el banner en todas las paginas*/
+    height: 100%;
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+
+
+.redes img{
+    margin-top: 16%;
+    width: 30%;
+    height: 65%;
+}
+/*menu de navegacion*/
+.menu{
+    height: 80px;
+    background-color: #326697;
+    transition: 300ms ease-in-out;
+}
+
+.menu ul{ /*Menu de navegacion en todas las paginas*/
+    text-align: center;
+    margin-right: 4%;
+
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.menu a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+.menu a:hover{
+    border: 1px solid white;
+    font-size: 1.2em;
+}
+
+/*pagina de login/registro*/
+.pagina-1{ /*section en pagina 1*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #becdff;
+    padding-bottom: 3%;
+}
+.contenedor{/*contiene el formulario de registro e inicio en pagina 1*/
+    position: relative;
+    width: 60vw;
+    height: 70vh;
+    background-color: rgb(255, 252, 252);
+    box-shadow:0 4px 20px 0 rgba(0, 0, 0, 3);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 5%;
+}
+.contenedor::before{
+    content:"";
+    position: absolute;
+    top:0;
+    right: 50%;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(-45deg,#014AAC,#00BF63);
+    z-index: 6;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.registro-inicio{/*en pagina 1*/
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+.forms-pagina-1 /*formulario en pagina1 y de registro*/
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 240px;
+    padding: 0 20px;
+}
+
+.forms-pagina-1.form-inicio{ /*transicion para el formulario de iniciar sesion*/
+    transition: 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+
+.forms-pagina-1.form-registrarse{ /*transicion para el formulario de registro en la pagina*/
+    transition: 0.7s ease-in-out;
+}
+
+.titulos-form{ /*titulos de iniciar sesion en el Pagina 1*/
+    font-size: 30px;
+    margin-bottom: 5%;
+    color: #00BF63;
+}
+.titulos-form-r{ /*Titulo de registrarse en Pagina1/registro*/
+    color: #3b8cde;
+}
+
+.entradas{ /*inputs de formularios en pagina 1 y registro*/
+    height: 5vh;
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    margin:2%;
+    border-radius: 2px;
+    padding: 2%;
+}
+.entradas input{ /*inputs de la clase entrada en pagina 1 y registro*/
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+.entradas input:invalid:not(:placeholder-shown){ /*formato para inputs invalidos despues de escribir algo*/
+    outline: 2px solid rgba(255, 0, 0, 0.313);
+    border-radius: 1px;
+}
+
+.botones{ /*botones de registrare/ iniciar secion en pagina 1 y registros*/
+    height: 6vh;
+    width:10vw;
+    border: none;
+    background-color: #329097;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5%;
+    border-radius: 2px;
+}
+
+.botones:hover{
+    background-color: #06676e;
+    font-weight: 500;
+    color: #fff;
+}
+#boton-registrar-1{ /*registrate aqui en login*/
+    color: #00bf63;
+}
+#boton-iniciar
+{
+    color: #3b8cde;
+}
+#boton-registrar-1:hover{
+    text-decoration: underline;
+}
+#boton-iniciar:hover /*inicia sesion en login*/
+{
+    text-decoration: underline;
+}
+
+.cuadro-afuera{ /*donde se encuentra lo que se mueve en pagina1*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cuadro-izq,.cuadro-der{ /*lo que se mueve en pagina1*/
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    min-width: 240px;
+    padding: 0 10px;
+    z-index: 6;
+}
+.info-pagina-1{ /*texto en el cuadro de descripcion de registro y pagina1*/
+    line-height: 1.5;
+    transition: 0.8s ease-in-out;
+    color: #fff;
+}
+#subtitulo-inicio{ /*titulos de bienvenida en pagina1 y registro*/
+    padding-bottom: 2%;
+    font-size: 1.5em;
+}
+.imagen-pagina-1{ /*imagenes en la pagina de registro*/
+    width: 100%;
+    transition: 0.8s ease-in-out;
+}
+
+.cuadro-izq .imagen-pagina-1,
+.cuadro-izq .info-pagina-1{  /*cuadro para iniciar sesion en pagina de registro*/
+    transform: translateX(-250%);
+}
+.cuadro-der .imagen-pagina-1,
+.cuadro-der .info-pagina-1{  /*cuadro de registro en pagina1*/
+    transform: translateX(0);
+}
+.contenedor.registrar-momento::before{ 
+    transform: translateX(0);
+} 
+.contenedor.registrar-momento .cuadro-der .imagen-pagina-1,
+.contenedor.registrar-momento .cuadro-der .info-pagina-1{/*para que se mueva la imagen y el texto en pagina 1*/
+    transform: translateX(250%);
+}
+.contenedor.registrar-momento .cuadro-izq .imagen-pagina-1,
+.contenedor.registrar-momento .cuadro-izq .info-pagina-1{/*para que se mueva la imagen y el texto en pagina 1*/
+    transform: translateX(0);
+}
+
+.cuadro-izq{ /*para poder rellenar el formulario de inicio QUITAR ESTA VAINAAAAAA*/
+    pointer-events: none;
+}
+
+.contenedor.registrar-momento .cuadro-der{/*para poder rellenar el formulario de registro*/
+    pointer-events: none;
+}
+.contenedor.registrar-momento .cuadro-izq{/*para poder pasar a iniciar sesion desde el formulario de registro*/
+    pointer-events: all;
+}
+
+/*formularios de registro en cursos*/
+a{
+    color: #080808;
+    text-decoration: none;
+}
+div input{ /*letra de los formularios diff*/
+    font-family: Monserratadd;
+}
+
+.inscripcion{/*seccion para registro en cursos*/
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #becdff;
+}
+.contenedor-inscripcion{ /*cuadro donde esta el formulario de registro y su descripcion*/
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    box-shadow:0 4px 20px 0 rgba(0, 0, 0, 3);
+    border-radius: 12px;
+    background-color: #fff;
+}
+.desc-curso{ /*div donde esta la imagenen los formularios de los cursos*/
+    width: 50%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.desc-curso img{ /*imagen que describe el curso, esta al lado del formulario*/
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+    object-fit: cover;
+}
+
+.form-curso{ /*formularios de los cursos*/
+    width: 60%;
+    display: inline-block;
+    justify-content: center;
+    font-family: Monserratadd;
+    align-items: center;
+    margin: 5%;
+}
+.form-curso input{ /*cuadros de entrada en el formulario del curso*/
+    width: 80%;
+}
+.titulo-regis{/*encabezado de los formularios en el centro*/
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.entradas-curso{ /*contenedor de los inputs del form*/
+    margin-left: 8%;
+}
+.info-de-registro{ /*para que el en el formulario el label se ve arriba del input*/
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 2%;
+}
+.info-de-registro input{ /*espacio de los inputs del formulario de registro*/
+    padding: 2.5%;
+    margin: 1%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #adabab;
+}
+
+.info-de-registro label{ /*etiquetas de los inputs del formulario de registro*/
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.fechas-de-registro{ /*contenedor de las fechas en el formulario de los cursos*/
+    width: 83%;
+    padding: 1.3%;
+    border-radius: 3px;
+    background-color: #afdadd;
+
+}
+.fechas-de-registro input[type="radio"]{ /*para que no se vean los circulitos del radio button en las fechas*/
+    display: none;
+}
+.fechas-de-registro label{ /*separacion entre fechas en los formularios de registro*/
+    padding: 0.5% 1%;
+    display: inline-block;
+}
+
+.fechas-de-registro label:hover{ /*fechas de los formularios de registro*/
+    border-radius: 2px;
+    background-color: #7eb3b8;
+    transition: 0.2s;
+}
+.fecha-2,.fecha-3{ /*margen para que los labels de las fechas queden en todo el espacio*/
+    margin-left: 10%;
+}
+#fecha-curso-1:checked ~ .fecha-1,
+#fecha-curso-2:checked ~ .fecha-2,
+#fecha-curso-3:checked ~ .fecha-3{ /* fechas seleccionadas de los formularios de registro*/
+    background-color: #5ab4bb;
+    border-radius: 2px;
+}
+
+/*estilos de SOBRE NOSOTROS*/
+.back-home{ /*para regressar al home*/
+    height: 2px;
+    width: fit-content;
+    text-transform: uppercase;
+    margin: 2% 1%;
+}
+.back-home a{
+    color: #202d3a;
+}
+.back-home:hover{ 
+    text-decoration: underline;
+}
+.contenedor-personajes{ /*contiene la leyenda de la pagina y a los personajes*/
+    width: 100%;
+    height: 80vh;
+    margin-top: 4%;
+    margin-bottom: 20%;
+    padding: 2% 0.5%;
+    display: flex;
+    background: linear-gradient(-45deg,#a7d7fd,#014AAC);
+
+}
+.desc-pagina{ /*leyenda de pagina de contacto*/
+    width: 30%;
+    margin: 0 0 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    background: transparent;
+
+}
+.personajes{/*personas del equipo en contacto, donde esta la imagen y su descripcion*/
+    width: 12%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2%;
+    border-radius: 15px;
+    transition: 550ms ease-in-out;
+}
+.personajes img{ /*imagenes de las personas*/
+    height: 100%;
+}
+
+.nombre-personaje{ /*Nombre de las personas del equipo en contacto*/
+    width: 100%;
+    margin-top: -30px;
+    padding-bottom: 18%;
+    visibility: visible;
+    text-decoration: underline;
+    writing-mode:vertical-lr;
+    white-space: nowrap;
+    background: linear-gradient(360deg,rgba(0, 0, 0, 0.5),rgba(207, 17, 17, 0.01));
+}
+
+.desc-personaje{ /*cuadro donde esta el texto descriptivo de cada persona*/
+    visibility: hidden;
+    position: absolute;
+    height:38%;
+    width: 25vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: linear-gradient(350deg,rgba(0, 0, 0, 0.8),rgba(75, 75, 75, 0.04));
+    transition: width 0.5s ease-out;
+}
+
+.personajes:hover{ /*aumenta el ancho del div para que se vea la imagen y descipcion completa*/
+    width: 25%;
+}
+
+.personajes:hover .desc-personaje{ /*para que la descripcion se muestre solo cuando se hace hover*/
+    visibility: visible;
+}
+.personajes:hover .desc-personaje p{ /*para que la descripcion en contacto no estepegado al borde*/
+    margin:0 2% 0 3%;
+}
+
+.personajes:hover .nombre-personaje{ /*donde se muestra la foto y descripcion de cada persona en Sobre nosotros*/
+    writing-mode:horizontal-tb;
+    margin: 0 2%;
+    padding-bottom: 0;
+    background: none;
+}
+
+/*footer en todas la paginas menos login y regitro de inicio*/
+.menu2{  /* menu del footer*/
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu2 h2{
+    color: white;
+}
+
+.menu2 a{
+    text-decoration: none;
+    color: rgba(221, 218, 218, 0.753);
+    padding: 6px;
+    font-size: 17px;
+}
+
+.menu2 a:hover{
+    color: white; 
+    transform: translateX(5px);
+
+}
+
+.derechosAutor{ /*mensaje de copyright en el footer de todas las paginas*/
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1% 1% 6%;
+    background: #202d3a;
+    color: white;
+}
+
+.boton-cerrar{ /*para cerrar sesion*/
+    height: 48px;
+    width: 150px;
+    background: red;
+    padding: 1%;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+}
+.boton-cerrar:hover{ /*para cerrar sesion*/
+    background: rgb(188, 0, 0);
+}
+
+footer{ /*footer en todas las paginas*/
+    background:  #34495e;
+    color:#fff;
+}

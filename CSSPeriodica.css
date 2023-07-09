@@ -1,0 +1,219 @@
+@font-face { /*Importacion de fuente*/
+  font-family: Robotoadd;
+  src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face { /*Importacion de fuente*/
+  font-family: Nunitoadd;
+  src: url(Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+        /*Aqui manejamos el titulo*/
+        .titulo {
+         text-align: center;
+         margin-top: 3%;
+         color: rgb(0, 0, 105);
+        }
+        /*Aqui manejamos la caja que contiene nuestra tabla*/
+        .contenedor-tabla{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        }
+        /*Aqui manejamos la tabla y su tamano*/
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        /*Aqui manejamos las celdas de la tabla*/
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            width: 10px;
+            height: 10px;
+        }
+        /*Esto permite que solo se cambien de color las celdas que contienen informacion*/
+        th:not(:empty):hover, td:not(:empty):hover{
+        background-color: #031FA2;
+      }
+      /*Esto le quita el subrayado y color azul a los links*/
+      a {
+            text-decoration: none;
+            color: black;
+        }
+    /*Aqui cambiamos el color del link cuando se hace hover a blanco*/
+    td:hover a{
+        color:white;
+    }
+    /*Aqui eliminamos las celdas que no contienen informacion para que no aparezcan en la tabla periodica*/
+        .no-border {
+    border: none;
+  }
+  /*Estas son las clases que cambian los colores de los elementos en la tabla periodica*/
+  .nometal {
+    background-color: #DDABFF;
+  }
+  .alcalinos {
+    background-color: #F7CAAC;
+  }
+  .alcalinoterreos
+  {
+    background-color: #FFE599;
+  }
+  .transicion
+  {
+    background-color: #FFFF00;
+  }
+  .transicion
+  {
+    background-color: #FFFF00;
+  }
+  .metaloides
+  {
+    background-color: #68FB61;
+  }
+  .halogenos
+  {
+    background-color: #FF66FF;
+  }
+  .nobles
+  {
+    background-color: #00CCFF;
+  }
+  .otros
+  {
+    background-color: #E2EFD9;
+  }
+  /*Muestra la transicion de la celda*/
+  .pop-out-cell {
+  transition: transform 0.05s ease-in-out;
+}
+/*Cuando se realiza hover encima del elemento, la celda cambia*/
+.pop-out-cell:hover {
+  transform: scale(1.4);
+}   
+h1,h2{ /*titulos con letra diff*/
+  font-family: Robotoadd;
+}
+*{  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunitoadd;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #becdff;
+}
+
+header{
+  display: inline-flex;
+  background-color: #00319D;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.banner{
+  height: 100%;
+  width: 70%;
+}
+
+.banner img{/*Logo en el banner en todas las paginas*/
+  height: 100%;
+  width: 100%;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-top: 1%;
+}
+
+
+.redes img{
+  margin-top: 16%;
+  width: 30%;
+  height: 65%;
+}
+
+.menu{
+  height: 80px;
+  background-color: #326697;
+}
+
+.menu ul{ /*Menu de navegacion en todas las paginas*/
+  text-align: center;
+  margin-right: 4%;
+}
+
+.menu li{
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+.menu a{
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+.menu a:hover{
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+
+.menu2{  /* menu del footer*/
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu2 h2{
+  color: white;
+}
+
+.menu2 a{
+  text-decoration: none;
+  color: rgba(221, 218, 218, 0.753);
+  padding: 6px;
+  font-size: 17px;
+}
+
+.menu2 a:hover{
+  color: white; 
+  transform: translateX(5px);
+
+}
+
+.derechosAutor{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1% 1% 6%;
+  background: #202d3a;
+  color: white;
+}
+
+.botones{ /*botones en pagina 1 y registro*/
+  height: 35px;
+  width: 150px;
+  background: red;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #fff;
+}
+
+footer{ /*footer en todas las paginas*/
+  background-color:  #34495e;
+  color:#fff;
+}

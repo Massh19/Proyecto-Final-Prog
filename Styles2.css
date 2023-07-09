@@ -1,0 +1,159 @@
+
+@font-face { /*Importacion de fuente*/
+    font-family: Robotoadd;
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+/*estilos para el home*/
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Robotoadd;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{ /*pagina de home*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header{
+    display: inline-flex;
+    background-color: #00319D;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner{ /*donde esta el logo en home*/
+    height: 100%;
+    width: 70%;
+}
+
+.banner img{/*Logo en el banner en home*/
+    height: 100%;
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+
+
+.redes img{
+    margin-top: 16%;
+    width: 30%;
+    height: 65%;
+}
+
+.menu{
+    height: 80px;
+    background-color: #326697;
+    transition: 300ms ease-in-out;
+}
+
+.menu ul{ /*Menu de navegacion en todas las paginas*/
+    text-align: center;
+    margin-right: 4%;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.menu a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+.menu a:hover{
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.pagina{ /*body en home*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background: #becdff;
+}
+
+.carta-video{ /* estilo de carta para cada video*/
+    width: 800px;
+    height: 520px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow:hidden;
+    text-align: center;
+    transition: all 0.25s;
+    margin: 35px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.carta-video:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.carta-video a{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #3498db;
+}
+
+.menu2{  /* menu del footer*/
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu2 h2{
+    color: white;
+}
+
+.menu2 a{
+    text-decoration: none;
+    color: rgba(221, 218, 218, 0.753);
+    padding: 6px;
+    font-size: 17px;
+}
+
+.menu2 a:hover{
+    color: white; 
+    transform: translateX(5px);
+
+}
+
+.derechosAutor{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #202d3a;
+    padding-left: 5%;
+    color: white;
+}
+
+.boton-cerrar{ /*para cerrar sesion*/
+    height: 35px;
+    width: 150px;
+    background: red;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+}
+
+footer{ /*footer en todas las paginas*/
+    background-color:  #34495e;
+    color:#fff;
+}

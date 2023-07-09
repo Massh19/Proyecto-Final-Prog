@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Ciencia</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/jpg" href="IMGS/Solociencia Logo.jpeg"/>
+</head>
+<body>
+    <section class="pagina-1">
+        <div class="contenedor">
+            <div class="registro-inicio">
+                <form action="Home.html" class="form-inicio, forms-pagina-1">
+                    <h2 class="titulos-form">Iniciar Sesión</h2>
+                    <div class="entradas">
+                        <input type="text" placeholder="Usuario" name="usuario" required>
+                    </div>
+                    <div class="entradas">
+                        <input type="password" placeholder="Contraseña" name="contrasena" required>
+                    </div>
+                    <input type="submit" value="Iniciar Sesión" class="botones">
+                    <p>¿No tienes cuenta? <a href="#" id="boton-registrar-1">Registrate aquí</a></p>
+
+                </form>
+                <form action="" class=", form-registrarse, forms-pagina-1">
+                    <h2 class="titulos-form-r">Registrarse</h2>
+                    <div class="entradas">
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                    </div>
+                    <div class="entradas">
+                        <input type="text" placeholder="Apellido" name="apellido">
+                    </div>
+                    <div class="entradas">
+                        <input type="text" placeholder="Edad" name="edad" required>
+                    </div>
+                    <div class="entradas">
+                        <input type="password" placeholder="Contraseña" name="contrasena" required>
+                    </div>
+                    <input type="submit" value="Registrarse" class="botones">
+                    <p>¿Ya tienes una cuenta? <a href="#" id="boton-iniciar">Inicia Sesion</a></p>
+                </form>
+            </div> <!--registro-inicio-->
+            <div class="cuadro-afuera">
+                <div class="cuadro-izq">
+                    <div class="info-pagina-1">
+                        <h3 id="subtitulo-inicio">Solo Ciencia</h3>
+                        <p><i>"No juzgues cada día por lo que cosechas, sino por las semillas que plantas"<br>-Robert Louis Stevenson</b></i></p>
+                    </div>
+                    <img src="IMGS/gif.gif" alt="imagen para registro" class="imagen-pagina-1">
+                </div>
+                <div class="cuadro-der">
+                    <div class="info-pagina-1">
+                        <h3 id="subtitulo-inicio">Bienvenido!</h3>
+                        <p><i>El Oxigeno y el Potacio tuvieron una cita y les fue <b>'OK' :)</b></i></p>
+                    </div>
+                    <img src="IMGS/Solociencia Logo.png" alt="logo" class="imagen-pagina-1">
+                </div>
+            </div>
+        </div>
+        <script>
+            const boton_iniciar = document.querySelector("#boton-iniciar");
+            const boton_registrar = document.querySelector("#boton-registrar-1");
+            const contenedor = document.querySelector(".contenedor");
+            boton_iniciar.addEventListener("click", () =>{ /*añade la clase para que se vea la animacion en pagina1*/
+                contenedor.classList.toggle("registrar-momento");
+            });
+            boton_registrar.addEventListener("click", () =>{/*quita la clase para que se vea la animacion en pagina1*/
+                contenedor.classList.toggle("registrar-momento");
+            });
+
+        </script>
+    </section>
+</body>
+<footer style="background-color: #becdff; color: #949393;">
+    <div>
+        <p>copyright©2023SoloCiencia. All right reserved</p>
+    </div> 
+</footer>
+</html>
