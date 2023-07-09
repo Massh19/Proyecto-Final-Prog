@@ -451,7 +451,7 @@ div input{ /*letra de los formularios diff*/
 }
 
 .personajes:hover{ /*aumenta el ancho del div para que se vea la imagen y descipcion completa*/
-    width: 25%;
+    width: 25.9%;
 }
 
 .personajes:hover .desc-personaje{ /*para que la descripcion se muestre solo cuando se hace hover*/
