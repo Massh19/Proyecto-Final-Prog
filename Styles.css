@@ -200,7 +200,7 @@ header{
 #boton-registrar-1:hover{
     text-decoration: underline;
 }
-#boton-iniciar:hover /*inicia sesion en login*/
+#boton-iniciar:hover /*inicia sesion en formulario de registro de usuarios*/
 {
     text-decoration: underline;
 }
@@ -245,22 +245,22 @@ header{
     transform: translateX(-250%);
 }
 .cuadro-der .imagen-pagina-1,
-.cuadro-der .info-pagina-1{  /*cuadro de registro en pagina1 sin desplazamiento*/
+.cuadro-der .info-pagina-1{  /*cuadro donde da la bienvenida, con su posicion original*/
     transform: translateX(0);
 }
-.contenedor.registrar-momento::before{ /*desplaza la parte gris(pseudoelemento) */
+.contenedor.registrar-momento::before{ /*mantener la parte gris(pseudoelemento) en su posicion original*/
     transform: translateX(0);
 } 
 .contenedor.registrar-momento .cuadro-der .imagen-pagina-1,
-.contenedor.registrar-momento .cuadro-der .info-pagina-1{/*para que se mueva la imagen y el texto en pagina 1*/
+.contenedor.registrar-momento .cuadro-der .info-pagina-1{/*para que se mueva la imagen y el texto de bienvenidaen pagina 1*/
     transform: translateX(250%);
 }
 .contenedor.registrar-momento .cuadro-izq .imagen-pagina-1,
-.contenedor.registrar-momento .cuadro-izq .info-pagina-1{/*para que se mueva la imagen y el texto en pagina 1*/
+.contenedor.registrar-momento .cuadro-izq .info-pagina-1{/*cuadro donde sale el gif, con su posicion original*/
     transform: translateX(0);
 }
 
-.cuadro-izq{ /*para poder rellenar el formulario de inicio QUITAR ESTA VAINAAAAAA*/
+.cuadro-izq{ /*para poder rellenar el formulario de inicio*/
     pointer-events: none;
 }
 
