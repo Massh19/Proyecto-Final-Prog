@@ -241,14 +241,14 @@ header{
 }
 
 .cuadro-izq .imagen-pagina-1,
-.cuadro-izq .info-pagina-1{  /*cuadro para iniciar sesion en pagina de registro*/
+.cuadro-izq .info-pagina-1{  /*desplazan el cuadro para iniciar sesion en pagina de registro*/
     transform: translateX(-250%);
 }
 .cuadro-der .imagen-pagina-1,
-.cuadro-der .info-pagina-1{  /*cuadro de registro en pagina1*/
+.cuadro-der .info-pagina-1{  /*cuadro de registro en pagina1 sin desplazamiento*/
     transform: translateX(0);
 }
-.contenedor.registrar-momento::before{ 
+.contenedor.registrar-momento::before{ /*desplaza la parte gris(pseudoelemento) */
     transform: translateX(0);
 } 
 .contenedor.registrar-momento .cuadro-der .imagen-pagina-1,
