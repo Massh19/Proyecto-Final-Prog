@@ -373,7 +373,6 @@ div input{ /*letra de los formularios diff*/
 #fecha-curso-2:checked ~ .fecha-2,
 #fecha-curso-3:checked ~ .fecha-3{ /* fechas seleccionadas de los formularios de registro*/
     background-color: #5ab4bb;
-    border-radius: 2px;
 }
 
 /*estilos de SOBRE NOSOTROS*/
