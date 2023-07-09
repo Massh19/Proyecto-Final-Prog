@@ -35,7 +35,7 @@ header{
     width: 100%;
 }
 
-.redes {
+.redes { /*Clase que abarca las redes sociales*/
     display: flex;
     justify-content: center;
     padding-left: 10%;
@@ -43,13 +43,13 @@ header{
 }
 
 
-.redes img{
+.redes img{ /*Estilos para los iconos de las redes*/
     margin-top: 16%;
     width: 30%;
     height: 65%;
 }
 
-.menu{
+.menu{ /*Menu principal de navegacion*/
     height: 80px;
     background-color: #326697;
     transition: 300ms ease-in-out;
@@ -60,7 +60,7 @@ header{
     margin-right: 4%;
 }
 
-.menu li{
+.menu li{ /*Estilos para los li dentro del menu*/
     display: inline-block;
     margin: 0 8px;
     line-height: 80px;
@@ -74,7 +74,7 @@ header{
     border-radius: 3px;
 }
 
-.menu a:hover{
+.menu a:hover{ /*Efecto hover del menu principal*/
     border: 1px solid white;
     font-weight: bold;
 }
@@ -87,7 +87,7 @@ header{
     background: #becdff;
 }
 
-.carta-video{ /* estilo de carta para cada video*/
+.carta-video{ /* estilo de carta para los contenedores de cada video*/
     width: 800px;
     height: 520px;
     border-radius: 8px;
@@ -100,7 +100,7 @@ header{
     background-color: #fff;
 }
 
-.carta-video:hover{
+.carta-video:hover{ /*Efecto hover para los contenedores de los videos*/
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
@@ -111,7 +111,7 @@ header{
     color: #3498db;
 }
 
-.menu2{  /* menu del footer*/
+.menu2{  /* menu que se encuentra al final de la pagina*/
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -134,7 +134,7 @@ header{
 
 }
 
-.derechosAutor{
+.derechosAutor{ /*Clase que abarca la informacion del copyrigth*/
     display: flex;
     justify-content: space-between;
     padding: 10px;
