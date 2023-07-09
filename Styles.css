@@ -426,7 +426,7 @@ div input{ /*letra de los formularios diff*/
 .nombre-personaje{ /*Nombre de las personas del equipo en contacto*/
     width: 100%;
     margin-top: -30px;
-    padding-bottom: 18%;
+    padding-bottom: 24%;
     visibility: visible;
     text-decoration: underline;
     writing-mode:vertical-lr;
