@@ -94,7 +94,7 @@
   transform: scale(1.4);
 }   
 h1,h2{ /*titulos con letra diff*/
-  font-family: Robotoadd;
+  font-family: Robotoadd,sans-serif;;
 }
 *{  margin: 0;
   padding: 0;
