@@ -13,10 +13,10 @@
 *{  margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Nunitoadd;
+    font-family: Nunitoadd,sans-serif;
 }
 h1,h2,h3,h4{ /*titulos con letra diff*/
-    font-family: Robotoadd;
+    font-family: Robotoadd,sans-serif;
 }
 header{
     display: inline-flex;
@@ -277,7 +277,7 @@ a{
     text-decoration: none;
 }
 div input{ /*letra de los formularios diff*/
-    font-family: Monserratadd;
+    font-family: Monserratadd, Helvetica, sans-serif;
 }
 
 .inscripcion{/*seccion para registro en cursos*/
@@ -313,7 +313,7 @@ div input{ /*letra de los formularios diff*/
     width: 60%;
     display: inline-block;
     justify-content: center;
-    font-family: Monserratadd;
+    font-family: Monserratadd,Helvetica, sans-serif;
     align-items: center;
     margin: 5%;
 }
