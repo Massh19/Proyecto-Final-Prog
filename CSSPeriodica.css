@@ -94,12 +94,12 @@
   transform: scale(1.4);
 }   
 h1,h2{ /*titulos con letra diff*/
-  font-family: Robotoadd,sans-serif;;
+  font-family: Robotoadd,sans-serif;
 }
 *{  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Nunitoadd;
+  font-family: Nunitoadd,sans-serif;
   text-decoration: none;
   list-style: none;
 }
