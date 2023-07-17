@@ -84,21 +84,6 @@
     </section>
 </body>
 <footer>
-    <div id="footer"></div>
 
-    <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var footer= document.getElementById('footer');
-      var footerRequest = new XMLHttpRequest();
-      footerRequest.open('GET', 'footer.html', true);
-      footerRequest.onreadystatechange = function() {
-        if (footerRequest.readyState === 4 && footerRequest.status === 200) {
-          footer.innerHTML = footerRequest.responseText;
-        }
-      };
-      footerRequest.send();
-    });
-    </script>
-    
 </footer>
 </html>
