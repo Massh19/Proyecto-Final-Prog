@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=Home.html">
+	
 	<title>Registro Usuario</title>
 	<link rel="stylesheet" href="Styles.css">
 </head>
