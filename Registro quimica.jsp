@@ -4,7 +4,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=Home.html">
 <title>Registro Curso Quimica</title>
 <link rel="stylesheet" href="Styles.css">
 </head>
